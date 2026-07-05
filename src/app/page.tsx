@@ -21,17 +21,8 @@ function Hero() {
         <span className="text-right">{profile.location}</span>
       </div>
       <h1 className="uppercase text-display-xl">
-        <span className="flex items-center gap-4 sm:gap-8">
-          <Image
-            src="/signature-mark.png"
-            alt=""
-            width={126}
-            height={150}
-            priority
-            className="h-[0.72em] w-auto shrink-0"
-          />
-          Vendra
-        </span>
+        Vendra
+        <br />
         Hastagiyan
       </h1>
       <p className="text-meta text-muted mt-8">{profile.name}</p>
