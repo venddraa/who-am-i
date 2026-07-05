@@ -66,7 +66,9 @@ function About() {
 function FeaturedProjects() {
   return (
     <Section id="work" number="02" label="Selected Work">
-      <h2 className="text-display uppercase mb-12 sm:mb-16">Projects</h2>
+      <p aria-hidden="true" className="text-display uppercase mb-12 sm:mb-16">
+        Projects
+      </p>
       <ul>
         {featuredProjects.map((project, i) => (
           <ProjectRow key={project.slug} project={project} index={i} />
@@ -181,12 +183,12 @@ function Experience() {
 function Contact() {
   return (
     <Section id="contact" number="05" label="Contact" inverse>
-      <h2 className="text-display uppercase">
+      <p className="text-display uppercase">
         Let&apos;s work
         <br />
         together
         <Asterisk className="inline-block size-[0.5em] ml-4 align-baseline" />
-      </h2>
+      </p>
       <p className="mt-8 max-w-xl text-inverse/70">
         Open to internships, research collaboration, and data science / ML
         projects.
@@ -219,7 +221,7 @@ function Contact() {
 
 export default function Home() {
   return (
-    <main>
+    <main id="main">
       <Hero />
       <About />
       <FeaturedProjects />

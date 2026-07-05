@@ -43,7 +43,7 @@ export default async function ProjectPage({
   ].filter(Boolean) as { label: string; href: string }[];
 
   return (
-    <main className="flex-1">
+    <main id="main" className="flex-1">
       <div className="mx-auto max-w-7xl w-full px-5 sm:px-8 py-16 sm:py-24">
         <div className="text-meta text-muted flex justify-between mb-12 sm:mb-16">
           <Link href="/projects" className="link-underline">

@@ -33,8 +33,8 @@ export default function Section({
               inverse ? "text-inverse/60" : "text-muted"
             }`}
           >
-            <span>{label}</span>
-            <span>{number}</span>
+            <h2 className="text-meta">{label}</h2>
+            <span aria-hidden="true">{number}</span>
           </div>
         )}
         {children}
