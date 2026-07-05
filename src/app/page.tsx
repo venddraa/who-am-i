@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Asterisk from "@/components/Asterisk";
 import Section from "@/components/Section";
@@ -21,7 +22,14 @@ function Hero() {
       </div>
       <h1 className="uppercase text-display-xl">
         <span className="flex items-center gap-4 sm:gap-8">
-          <Asterisk className="size-[0.55em] shrink-0" />
+          <Image
+            src="/signature-mark.png"
+            alt=""
+            width={126}
+            height={150}
+            priority
+            className="h-[0.72em] w-auto shrink-0"
+          />
           Vendra
         </span>
         Hastagiyan
@@ -187,7 +195,13 @@ function Contact() {
         Let&apos;s work
         <br />
         together
-        <Asterisk className="inline-block size-[0.5em] ml-4 align-baseline" />
+        <Image
+          src="/signature-mark.png"
+          alt=""
+          width={126}
+          height={150}
+          className="inline-block h-[0.62em] w-auto ml-5 align-baseline invert"
+        />
       </p>
       <p className="mt-8 max-w-xl text-inverse/70">
         Open to internships, research collaboration, and data science / ML

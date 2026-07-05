@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { profile } from "@/content/site";
 
@@ -5,7 +7,11 @@ export const alt = `${profile.name} — ${profile.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OpenGraphImage() {
+export default async function OpenGraphImage() {
+  const signature = await readFile(
+    join(process.cwd(), "public", "signature.png"),
+  );
+  const signatureSrc = `data:image/png;base64,${signature.toString("base64")}`;
   return new ImageResponse(
     (
       <div
@@ -35,17 +41,14 @@ export default function OpenGraphImage() {
           <span>{profile.location}</span>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
-            <svg width="72" height="72" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M12 2v20M3.34 7l17.32 10M3.34 17L20.66 7"
-                stroke="#141414"
-                strokeWidth="3.4"
-                strokeLinecap="round"
-              />
-            </svg>
-            <span style={{ fontSize: 110, fontWeight: 700 }}>VENDRA</span>
-          </div>
+          <img
+            src={signatureSrc}
+            alt=""
+            width={200}
+            height={95}
+            style={{ marginBottom: 24 }}
+          />
+          <span style={{ fontSize: 110, fontWeight: 700 }}>VENDRA</span>
           <span style={{ fontSize: 110, fontWeight: 700, lineHeight: 1 }}>
             HASTAGIYAN
           </span>
