@@ -3,7 +3,7 @@ import ProjectRow from "@/components/ProjectRow";
 import { projects } from "@/content/projects";
 
 export const metadata: Metadata = {
-  title: "Projects — Muhammad Vendra Hastagiyan",
+  title: "Projects",
   description:
     "Data science, machine learning, forecasting, and applied AI projects by Muhammad Vendra Hastagiyan.",
 };

@@ -23,8 +23,12 @@ export default function ProjectRow({ project, index }: ProjectRowProps) {
           </h3>
           <p className="mt-3 max-w-2xl text-muted">{project.summary}</p>
           <p className="text-meta text-muted mt-4 flex flex-wrap gap-x-4 gap-y-1">
-            <span>{project.year === "TODO" ? "—" : project.year}</span>
-            <span aria-hidden="true">·</span>
+            {project.year !== "TODO" && (
+              <>
+                <span>{project.year}</span>
+                <span aria-hidden="true">·</span>
+              </>
+            )}
             <span>{project.role}</span>
             <span aria-hidden="true">·</span>
             <span>{project.stack.slice(0, 4).join(" / ")}</span>
