@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import Asterisk from "./Asterisk";
 import { navigation, profile } from "@/content/site";
 
 export default function Header() {
@@ -8,11 +8,17 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8 h-14 flex items-center justify-between">
         <Link
           href="/"
-          className="flex items-center gap-2 font-semibold tracking-tight"
+          className="shrink-0"
           aria-label={`${profile.name} — home`}
         >
-          <Asterisk className="size-3.5" />
-          <span className="text-meta">{profile.shortName}</span>
+          <Image
+            src="/signature.png"
+            alt=""
+            width={252}
+            height={120}
+            priority
+            className="h-8 w-auto"
+          />
         </Link>
         <nav aria-label="Main navigation">
           <ul className="flex items-center gap-4 sm:gap-7">

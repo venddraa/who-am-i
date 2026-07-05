@@ -1,4 +1,4 @@
-import Asterisk from "./Asterisk";
+import Image from "next/image";
 import { profile, socialLinks } from "@/content/site";
 
 export default function Footer() {
@@ -6,7 +6,13 @@ export default function Footer() {
     <footer className="bg-ink text-inverse">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-10 flex flex-col sm:flex-row gap-6 items-start sm:items-center justify-between">
         <div className="flex items-center gap-3">
-          <Asterisk className="size-3 text-inverse/70" />
+          <Image
+            src="/signature.png"
+            alt=""
+            width={252}
+            height={120}
+            className="h-6 w-auto invert opacity-80"
+          />
           <p className="text-meta text-inverse/70">
             © {new Date().getFullYear()} {profile.name}
           </p>
