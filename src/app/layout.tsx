@@ -18,15 +18,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${profile.name} — Data Science & Applied AI`,
+    default: `${profile.name} — Data Science & AI Engineering`,
     template: `%s — ${profile.name}`,
   },
   description:
-    "Informatics student focused on Data Science, Machine Learning, Time Series Forecasting, and Applied AI. Building end-to-end AI systems from data to deployed models.",
+    "Informatics student focused on Data Science, Machine Learning, Time Series Forecasting, and AI Engineering. Building end-to-end AI systems from data to deployed models.",
   openGraph: {
-    title: `${profile.name} — Data Science & Applied AI`,
+    title: `${profile.name} — Data Science & AI Engineering`,
     description:
-      "Informatics student focused on Data Science, Machine Learning, Time Series Forecasting, and Applied AI.",
+      "Informatics student focused on Data Science, Machine Learning, Time Series Forecasting, and AI Engineering.",
     url: siteUrl,
     siteName: profile.name,
     locale: "en_US",

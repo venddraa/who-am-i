@@ -3,7 +3,7 @@ import type { NavItem, SocialLink } from "./types";
 export const profile = {
   name: "Muhammad Vendra Hastagiyan",
   shortName: "Vendra",
-  tagline: "Data Science · Machine Learning · Applied AI",
+  tagline: "Data Science · Machine Learning · AI Engineering",
   location: "Semarang, Indonesia",
   email: "muhammadvendra4@gmail.com",
   /**
@@ -17,7 +17,7 @@ export const profile = {
     "Machine Learning",
     "Time Series Forecasting",
     "Computer Vision",
-    "Applied AI",
+    "AI Engineering",
   ],
   /** TODO: replace with a public CV link when approved for publishing. */
   cvUrl: null as string | null,

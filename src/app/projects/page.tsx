@@ -5,7 +5,7 @@ import { projects } from "@/content/projects";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Data science, machine learning, forecasting, and applied AI projects by Muhammad Vendra Hastagiyan.",
+    "Data science, machine learning, forecasting, and AI engineering projects by Muhammad Vendra Hastagiyan.",
 };
 
 export default function ProjectsPage() {

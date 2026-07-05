@@ -46,6 +46,43 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "iris-indoor-surveillance",
+    title: "IRIS — Intelligent Recognition & Indoor Surveillance",
+    summary:
+      "Web-based multi-camera system that detects, recognizes, and tracks lecturers in real time across indoor campus spaces, with a live presence dashboard.",
+    role: "AI Engineer", // TODO: confirm exact role in the team
+    stack: [
+      "Python",
+      "YOLOv8n",
+      "ByteTrack",
+      "YuNet",
+      "InsightFace",
+      "OSNet",
+      "TypeScript",
+    ],
+    year: "TODO",
+    status: "ongoing",
+    featured: true,
+    links: {
+      // Repositories (DS-Bengkod-23/fe-indoorv2, DS-Bengkod-23/indoor-api)
+      // are private — do not link publicly unless they are made public.
+    },
+    caseStudy: [
+      {
+        heading: "Problem",
+        body: "Knowing which lecturers are present on campus, where they are, and for how long normally requires checking rooms manually. IRIS automates this: it detects, recognizes, tracks, and logs lecturer presence in real time across multiple cameras in indoor campus environments.",
+      },
+      {
+        heading: "Approach",
+        body: "Real-time video from multi-room cameras flows through a staged pipeline: YOLOv8n detects people and ByteTrack tracks each individual per camera. Identity is established with YuNet for face detection and InsightFace for face recognition; when a face is not clearly visible, OSNet_x1_0 re-identifies individuals from body appearance features and supports cross-camera identity matching. Matched identities are then logged with location and duration.",
+      },
+      {
+        heading: "Result",
+        body: "Processing results are stored and presented through a web dashboard showing each lecturer's name, last known location, arrival time, presence duration, attendance status, and room-to-room movement history.",
+      },
+    ],
+  },
+  {
     slug: "wind-power-forecasting",
     title: "Wind Active Power Forecasting",
     summary:

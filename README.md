@@ -1,6 +1,6 @@
 # who-am-i
 
-Personal portfolio website of **Muhammad Vendra Hastagiyan** — Informatics student focused on Data Science, Machine Learning, Time Series Forecasting, and Applied AI.
+Personal portfolio website of **Muhammad Vendra Hastagiyan** — Informatics student focused on Data Science, Machine Learning, Time Series Forecasting, and AI Engineering.
 
 Minimalist black-and-white editorial design: large typography, strong whitespace, slide-like sections, and a subtle asterisk motif.
 
