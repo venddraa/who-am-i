@@ -23,7 +23,7 @@ export const profile = {
   cvUrl: null as string | null,
 };
 
-export const siteUrl = "https://who-am-i-two-hazel.vercel.app";
+export const siteUrl = "https://who-am-i-vendra.vercel.app";
 
 export const navigation: NavItem[] = [
   { label: "About", href: "/#about" },
