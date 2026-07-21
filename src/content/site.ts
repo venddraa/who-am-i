@@ -11,7 +11,7 @@ export const profile = {
    * Kept factual: sourced from CV profile section.
    */
   statement:
-    "I'm an Informatics Engineering student at Dian Nuswantoro University specializing in Data Science and AI. I build end-to-end AI solutions — from model development to production-level optimization — across computer vision and time series forecasting.",
+    "I'm an Informatics Engineering student at Dian Nuswantoro University specializing in Data Science and AI. I build end-to-end AI solutions, from model development to production-level optimization, across computer vision and time series forecasting.",
   focusAreas: [
     "Data Science",
     "Machine Learning",

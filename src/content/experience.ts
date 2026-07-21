@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
       },
       {
         title: "Data Scientist — Computer Vision",
-        period: "Jan 2025 — Present",
+        period: "Jan 2026 — Present",
         bullets: [
           "Built a multi-modal emotion detection pipeline combining facial expression recognition (FER) and contextual emotion analysis (Emotic), classifying up to 26 emotion labels with continuous Valence-Arousal-Dominance scores.",
           "Integrated YOLOv8n for person detection and YuNet for face detection with margin-aware cropping.",
@@ -26,7 +26,7 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    organization: "AI Research and Development Group",
+    organization: "Bengkel Koding - Teaching Assistant",
     location: "Semarang, Indonesia",
     roles: [
       {
